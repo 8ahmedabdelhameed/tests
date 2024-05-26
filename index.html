@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pj.css">
+</head>
+<body>
+    <audio id="audio_play">
+        <source src="CAT.mpeg" type="audio/ogg" />
+      </audio>
+      <audio id="audio_play1">
+        <source src="CAMEL.mpeg" type="audio/ogg" />
+      </audio>
+      <audio id="audio_play2">
+        <source src="Chicken.mpeg" type="audio/ogg" />
+      </audio>
+        <button onclick="myFunction()">Show all</button>
+    <label style="font-size: xx-large; position: absolute; left: 80%;  ">Animal Sounds App</label>
+    <div id = "slider" style="position: absolute; left: 0%; top: 30%; display :none;" >
+        <img  style=" border: 1px solid red; width: 500px; height: 300px;" onclick="camel()"  src="camel.png">
+        <img style="border: 1px solid rebeccapurple; width: 500px; height: 300px; " onclick="chicken()" src="chicken.png" alt="">
+        <img style="border: 1px solid brown; width: 500px; height: 300px;" onclick="cat()"  src="cat.png" alt="">
+        <img style="border: 1px solid blUE; width: 400px; height: 300px; " src="bee.png" alt="">
+        <img style="border: 1px solid black; width: 400px; height: 300px; " src="dog.jpg" alt="">
+    </div>
+</body>
+<script src="pj.js" >
+    function myFunction() {
+    var x = document.getElementById("slider");
+    if (x.style.display == "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+</html>
